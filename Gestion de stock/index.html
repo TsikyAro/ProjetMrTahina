@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        h3 {
+            color: #555;
+        }
+
+        input[type="date"],
+        select,
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <h2>Voir l'état du stock du</h2>
+        <label for="date1"><h3>Date de début</h3></label>
+        <input type="date" name="date1" id="date1" required>
+        
+        <label for="date2"><h3>Date de fin</h3></label>
+        <input type="date" name="date2" id="date2" required>
+
+        <label for="produit"><h3>Produit</h3></label>
+        <select name="produit" id="produit" required>
+            <option value="produit1">Produit 1</option>
+            <option value="produit2">Produit 2</option>
+        </select>
+        
+        <label for="magasin"><h3>Magasin</h3></label>
+        <select name="magasin" id="Magasin" required>
+            <option value="magasin1">Magasin 1</option>
+            <option value="magasin2">Magasin 2</option>
+        </select>
+
+        <input type="submit" value="Voir">
+    </form>
+</body>
+</html>
